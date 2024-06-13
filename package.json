@@ -4,25 +4,27 @@
   "type": "module",
   "source": "src/index.tsx",
   "exports": {
-    "require": "./index.cjs",
-    "default": "./index.modern.js"
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
   },
-  "main": "index.cjs",
-  "module": "index.module.js",
+  "main": "./index.cjs",
+  "module": "./index.module.js",
   "unpkg": "./index.umd.js",
   "scripts": {
     "build": "microbundle --jsx",
     "dev": "microbundle watch"
   },
   "devDependencies": {
+    "@types/uuid": "^9.0.8",
     "microbundle": "^0.15.1",
     "typescript": "^4.9.5"
   },
   "peerDependencies": {
     "@types/react": "^18.3.3",
-    "react": "^18.3.1"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "dependencies": {
-    "react-dom": "^18.3.1"
+    "uuid": "^9.0.1"
   }
 }
