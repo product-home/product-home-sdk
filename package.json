@@ -4,8 +4,8 @@
   "type": "module",
   "source": "src/index.tsx",
   "exports": {
-    "require": "./dist/index.cjs",
-    "default": "./dist/index.modern.js"
+    "require": "./index.cjs",
+    "default": "./index.modern.js"
   },
   "main": "./index.cjs",
   "module": "./index.module.js",
