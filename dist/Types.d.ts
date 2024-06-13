@@ -11,6 +11,12 @@ export interface AnalyticsRequest {
     anonymous_id?: string;
     key: string;
 }
+export interface IdentityAnalyticsRequest {
+    properties?: EventProperties;
+    user_id?: string;
+    anonymous_id: string;
+    key: string;
+}
 export interface Feature {
     name: string;
     value: boolean;
